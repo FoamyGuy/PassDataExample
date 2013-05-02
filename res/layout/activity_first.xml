@@ -1,0 +1,35 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FirstActivity" >
+
+    <TextView
+        android:id="@+id/colorPickLbl"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_centerHorizontal="true"
+        android:textSize="25sp"
+        android:text="Choose a Color" 
+        android:layout_above="@+id/colorSpn"/>
+
+    <Spinner
+        android:id="@id/colorSpn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:layout_margin="30dp"
+        android:entries="@array/colors" />
+    
+    <Button
+        android:id="@+id/enterBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter"
+        android:layout_below="@id/colorSpn"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
